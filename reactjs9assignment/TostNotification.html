@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+
+<body>
+    <div class="buttons">
+        <button onclick="showToast(successmsg)">Success</button>
+        <button onclick="showToast(errormsg)">Error</button>
+        <button onclick="showToast(invalidmsg)">Invalid</button>
+    </div>
+
+    <div id="toastbox"></div>
+
+    <script>
+        let toastBox = document.getElementById("toastbox");
+        let successmsg = 'Successfully Updated';
+        let errormsg = 'Please fix the error';
+        let invalidmsg = 'Check Invalid and fix the issue';
+
+        function showToast(msg) {
+            let toast = document.createElement("div");
+            toast.classList.add("toast");
+            toast.innerHTML = msg;
+            toastBox.appendChild(toast);
+
+            if (msg.includes('error')) {
+                toast.classList.add('error');
+            }
+
+            if (msg.includes('Invalid')) {
+                toast.classList.add('invalid');
+            }
+
+            setTimeout(() => {
+                toast.remove();
+            }, 6000);
+        }
+    </script>
+</body>
+
+</html>
+
+<!-- *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f7edff;
+
+}
+
+.buttons {
+    margin: 50px;
+}
+
+.buttons button {
+    background: #333;
+    color: #ffff;
+    border: 0;
+    outline: 0;
+    width: 120px;
+    height: 40px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#toastbox {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+
+}
+
+.toast {
+    width: 400px;
+    height: 80px;
+    background: #ffff;
+    font-weight: 500px;
+    margin: 15px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+}
+
+.toast.error i {
+    color: red;
+}
+
+.toast.Invalid i {
+    color: orange;
+} -->

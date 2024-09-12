@@ -4,7 +4,6 @@ const AgeCalculator = () => {
   const [birthDate, setBirthDate] = useState('');
   const [age, setAge] = useState('');
 
-  // Set the maximum date allowed to today's date
   const maxDate = new Date().toISOString().split("T")[0];
 
   const calculateAge = () => {
@@ -71,3 +70,4 @@ const AgeCalculator = () => {
 };
 
 export default AgeCalculator;
+

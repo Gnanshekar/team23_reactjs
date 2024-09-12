@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function RemoveDuplicates(arr) {
+            return [...new Set(arr)];
+        }
+
+        const words = [
+            "apple", "banana", "apple", "orange", "banana", "grape", "orange", "apple", "grape",
+            "mango", "peach", "apple", "banana", "kiwi", "grape", "orange", "kiwi", "apple",
+            "mango", "peach", "plum", "banana", "plum", "kiwi", "grape", "orange", "apple",
+            "plum", "pear", "kiwi", "pear", "apple", "banana", "kiwi", "grape", "orange",
+            "apple", "mango", "peach", "banana", "plum", "apple", "banana", "orange", "grape",
+            "kiwi", "peach", "plum", "pear", "apple", "pear", "banana", "apple", "orange",
+            "banana", "grape", "mango", "peach", "kiwi", "plum", "pear", "apple", "banana"
+        ];
+
+        console.log(RemoveDuplicates(words));
+    </script>
+</body>
+
+</html>

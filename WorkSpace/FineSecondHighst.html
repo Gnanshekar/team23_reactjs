@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function findSecondhighest(arr) {
+            const sortedarry = arr.sort((a, b) => b - a);
+            return sortedarry[1];
+        }
+        
+        const numbers = [10, 5, 20, 15, 8, 23]
+        console.log(findSecondhighest(numbers))
+    </script>
+</body>
+
+</html>

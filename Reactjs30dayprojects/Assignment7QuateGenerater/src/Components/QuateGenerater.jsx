@@ -43,3 +43,4 @@ const QuoteOfTheDay = () => {
 };
 
 export default QuoteOfTheDay;
+

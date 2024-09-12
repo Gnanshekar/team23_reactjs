@@ -26,3 +26,31 @@ const DarkModeTheme = () => {
 };
 
 export default DarkModeTheme;
+
+// body {
+//   background-color: #ffffff;
+//   color: #000000;
+//   transition: background-color 0.3s, color 0.3s;
+// }
+
+// .theme-toggle-container {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100vh;
+// }
+
+// button {
+//   padding: 10px 20px;
+//   font-size: 16px;
+//   cursor: pointer;
+// }
+
+
+// body.dark-mode {
+//   background-color: #121212;
+//   color: #ffffff;
+// }
+
+
+

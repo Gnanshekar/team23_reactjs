@@ -16,3 +16,106 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+<!-- const noteContainer = document.querySelector(".notes-container");
+const createbtn = document.querySelector(".btn");
+
+function showNotes() {
+    noteContainer.innerHTML = localStorage.getItem("notes") || "";
+}
+
+function updateStorage() {
+    localStorage.setItem("notes", noteContainer.innerHTML);
+}
+
+createbtn.addEventListener("click", () => {
+    let inputBox = document.createElement("p");
+    let img = document.createElement("img");
+    inputBox.className = "input-box";
+    inputBox.contentEditable = "true";
+    img.src = "images/delete.png";
+    noteContainer.appendChild(inputBox).appendChild(img);
+    updateStorage();
+});
+
+noteContainer.addEventListener("click", function(e) {
+    if (e.target.tagName === "IMG") {
+        e.target.parentElement.remove();
+        updateStorage();
+    } else if (e.target.classList.contains("input-box")) {
+        document.querySelectorAll(".input-box").forEach(nt => {
+            nt.onkeyup = function() {
+                updateStorage();
+            }
+        });
+    }
+});
+
+document.addEventListener("keydown", event => {
+    if (event.key === "Enter" && document.activeElement.contentEditable === "true") {
+        document.execCommand("insertLineBreak");
+        event.preventDefault();
+    }
+});
+
+showNotes(); -->
+
+<!-- * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #cf9aff, #95c0ff);
+    color: #fff;
+    padding-top: 4%;
+    padding-left: 10%;
+}
+
+.container h1 {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.container button {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#9498fd, #571094);
+    color: #fff;
+    font-size: 16px;
+    outline: 0;
+    border: 0;
+    border-radius: 40px;
+    padding: 15px 25px;
+    margin: 30px 0 20px;
+    cursor: pointer;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-height: 150px;
+    background: #fff;
+    color: #333;
+    padding: 20px;
+    margin: 20px;
+    outline: none;
+    border-radius: 5px;
+}
+
+.input-box img {
+    width: 25px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+ -->
