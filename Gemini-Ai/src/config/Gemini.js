@@ -8,8 +8,6 @@
 
 import {
     GoogleGenerativeAI,
-    HarmCategory,
-    HarmBlockThreshold,
   } from "@google/generative-ai";
   
   const apiKey = "AIzaSyDO0W55ZKR2SExk15HbDqDSlV8ji12ip7I"; // Your API key

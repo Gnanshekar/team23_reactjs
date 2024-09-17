@@ -2,7 +2,7 @@ import React from 'react'
 import UserForm from './UserForm';
 import UserTable from './UserTable';
 import { useState } from 'react';
-import { useEffect } from 'react'
+import { useEffect } from 'react';
 
 const Users = () => {
     const [User, setUser] = useState({
@@ -62,7 +62,7 @@ const Users = () => {
         });
         ReadUser()
     }
-
+    
     const ClearForm = () => {
         setUser({
             Fname: "",
