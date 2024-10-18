@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function deepClone(obj) { 
+            return JSON.parse(JSON.stringify(obj)); 
+          }
+          
+          // Example usage:
+          const original = {
+            name: 'Alice',
+            age: 30,
+            hobbies: ['reading', 'traveling'],
+            address: {
+              city: 'Wonderland',
+              zip: '12345'
+            }
+          };
+          
+          const cloned = deepClone(original);
+          
+          // Modifying the clone to show it's a deep copy
+          cloned.hobbies.push('coding');
+          cloned.address.city = 'Newland';
+          
+          console.log('Original:', original);
+          console.log('Cloned:', cloned);
+          
+    </script>
+</body>
+</html>

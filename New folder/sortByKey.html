@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sortByKey(arr, key) {
+            return arr.sort((a, b) => a[key] - b[key]);
+          }
+          
+          // Example array of objects
+          const data = [
+            { name: 'Alice', age: 25 },
+            { name: 'Bob', age: 30 },
+            { name: 'Charlie', age: 20 }
+          ];
+          
+          // Using the function to sort by 'age'
+          const sortedData = sortByKey(data, 'age');
+          
+          // Output the sorted array
+          console.log(sortedData);
+          
+    </script>
+</body>
+</html>

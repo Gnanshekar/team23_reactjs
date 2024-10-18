@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const UserForm = ({ User, handleChange, CreateUser, isEdit, UpdateUser }) => {
     return (
         <div>
@@ -25,8 +24,6 @@ const UserForm = ({ User, handleChange, CreateUser, isEdit, UpdateUser }) => {
                     (<button type="button" className="btn btn-primary" onClick={UpdateUser}>Update</button>) :
                     (<button type="button" className="btn btn-primary" onClick={CreateUser}>Submit</button>)
                 }
-
-
             </form>
         </div>
     )

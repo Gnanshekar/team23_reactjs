@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function debounce(func, delay) {
+            let timer;
+
+            return function () {
+                clearTimeout(timer);
+                timer = setTimeout(func, delay);
+            };
+        }
+
+        // Example function to debounce
+        function myFunction() {
+            console.log('Function executed!');
+        }
+
+        // Create a debounced version of myFunction with a delay of 2000 milliseconds
+        const debouncedFunction = debounce(myFunction, 2000);
+
+        // Use the debounced function
+        debouncedFunction(); // Call it for the first time
+        debouncedFunction(); // Call it again quickly, will reset the timer
+        debouncedFunction(); // Call it again quickly, will reset the timer
+
+        // After 2 seconds of the last call, "Function executed!" will be logged to the console.
+
+    </script>
+</body>
+
+</html>

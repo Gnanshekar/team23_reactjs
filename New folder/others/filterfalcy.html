@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*let arr = [false,0,NaN,6,undefined,90,"",'Hi'];
+
+        let narr = arr.filter((v,i)=> {
+            return v;
+        })
+        console.log(narr);*/
+
+        function trueorfalseflat(arr) {
+            // Filter out falsy values
+            return arr.filter((v) => v);
+        }
+        
+        let arr = [false, 0, NaN, 6, undefined, 90, "", 'Hi'];
+        console.log(trueorfalseflat(arr)); 
+        
+    </script>
+</body>
+</html>

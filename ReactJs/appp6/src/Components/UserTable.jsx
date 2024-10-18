@@ -7,12 +7,11 @@ const UserTable = ({ allUsers, DeleteUser, EditUser }) => {
             <table class="table">
                 <thead>
                     <tr>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Email</th>
-                        <th scope="col">Edit</th>
-                        <th scope="col">Delete</th>
-
+                        <th>First</th>
+                        <th>Last</th>
+                        <th>Email</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
                     </tr>
                 </thead>
                 <tbody>

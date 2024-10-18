@@ -1,0 +1,57 @@
+.header {
+  width: 100%; /* The header takes up the full width of the page */
+  background: blue; /* Sets the background color to blue */
+  border: 3px solid yellow; /* Adds a yellow border around the header */
+  display: flex; /* Enables flexbox layout for easy alignment */
+  justify-content: space-between; /* Spaces out the h1 and nav elements with space between them */
+  align-items: center; /* Vertically centers the h1 and nav inside the header */
+  padding: 0 20px; /* Adds 20px padding on the left and right sides */
+}
+
+.header h1 {
+  margin: 0; /* Removes any default margin from the h1 to prevent misalignment */
+}
+
+.nav ul {
+  list-style-type: none; /* Removes the default bullet points in the list */
+  display: flex; /* Aligns the list items horizontally (in a row) */
+  padding: 0; /* Removes the default padding around the ul */
+  margin: 0; /* Removes the default margin around the ul */
+}
+
+.nav ul li {
+  margin-right: 40px; /* Adds 40px space between each list item */
+}
+
+.nav ul li:last-child {
+  margin-right: 0; /* Removes the margin on the last list item to avoid extra space */
+}
+
+.nav {
+  margin-right: 100px; /* Moves the entire nav block 100px to the left from the right edge */
+}
+
+.mainbody {
+  margin-top: -22px;
+  width: 100vw;   /* 100% of the viewport width */
+  height: 100vh;  /* 100% of the viewport height */
+  background-color: lightblue; /* Example background color */
+  position: relative; /* Optional: enables positioning context */
+}
+
+.footer {
+  
+  position: fixed; /* Keeps the footer at a fixed position */
+  bottom: 0;       /* Aligns the footer to the bottom of the viewport */
+  left: 0;         /* Aligns the footer to the left */
+  width: 100%;     /* Full width of the viewport */
+  background-color: lightgray; /* Example background color */
+  padding: 0px;   /* Optional padding */
+  text-align: center; /* Center text within the footer */
+}
+
+.countdown {
+  background: yellow;
+  width: 300px;
+}
+

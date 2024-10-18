@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Function to merge arrays
+        function mergeArrays(array1, array2) {
+            const mergedArray = [];
+            const maxLength = Math.max(array1.length, array2.length);
+
+            for (let i = 0; i < maxLength; i++) {
+                if (i < array1.length) mergedArray.push(array1[i]);
+                if (i < array2.length) mergedArray.push(array2[i]);
+            }
+
+            return mergedArray;
+        }
+
+        // Calling the function and logging the result
+        const arr1 = [10, 20, 30];
+        const arr2 = [1, 2, 3, 4, 5];
+
+        const result = mergeArrays(arr1, arr2);
+        console.log(result);
+
+    </script>
+</body>
+
+</html>

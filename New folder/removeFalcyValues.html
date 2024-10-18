@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function removeFalsyValues(arr) {
+            const filteredArray = arr.filter(Boolean);
+            console.log(filteredArray); // Print the filtered result inside the function
+          }
+          
+          // Input array outside the function
+          const inputArray = [0, "hello", false, 42, "", null, "world", undefined, NaN, true];
+          
+          // Call the function with the input array
+          removeFalsyValues(inputArray);
+          
+    </script>
+</body>
+</html>
